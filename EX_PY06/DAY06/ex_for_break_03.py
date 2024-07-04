@@ -15,7 +15,7 @@ for d in range(2, 10):
     print(f'\n[{d}단]',end=' ')
     for n in range(1,10):
         print(f'{d}*{n}={d*n:<2}',end=' ')
-        if n==100:
+        if n==d:
             isBreak=True
             break
     if isBreak: break    
