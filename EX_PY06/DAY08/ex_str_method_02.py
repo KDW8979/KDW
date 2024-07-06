@@ -8,7 +8,7 @@ data = " Happy new Year 2025!  "
 
 # 좌우 모든 공백 제거
 m1 = msg.strip() #복사본을 제거, msg에는 변화가 없다. strip본을 원한다면 따로 저장하던가 해야함
-print(f"원본 msg : {len(msg)}개 --- 제거 m1 : {len(m1)}갸")
+print(f"원본 msg : {len(msg)}개 --- 제거 m1 : {len(m1)}개")
 
 d1 = data.strip()
 print(f"원본 msg : {len(data)}개 --- 제거 m2 : {len(d1)}개")
@@ -33,13 +33,13 @@ else:
 # ------------------------------------------------------------------
 ## [실습] 입력받은 데이터에 따라 출력을 다르게 합니다.
 ## input() 함수 사용
-## [조건] 알파벳이면서 ★, 숫자면 ♥, 나머지는 무시
+## [조건] 알파벳이면 ★, 숫자면 ♥, 나머지는 무시
 # ------------------------------------------------------------------
-data = input("알파벳, 숫자 또는 문자 입력 : ")
-if data.isalpha:    # if 'a' <= data <= 'z' or 'A' <= data <= 'Z': 
-    print("★")
-elif data.isnumeric:  # "0" <= data <= "9"
-    print("♥")
+# data = input("알파벳, 숫자 또는 문자 입력 : ")
+# if data.isalpha:    # if 'a' <= data <= 'z' or 'A' <= data <= 'Z': 
+#     print("★")
+# elif data.isnumeric:  # "0" <= data <= "9"
+#     print("♥")
 
 
 
