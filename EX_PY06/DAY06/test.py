@@ -7,3 +7,15 @@
 
 # num=f'{81}입니다.'
 # print(f'{num:0>10}')
+
+# height = int(input("삼각형의 높이를 입력하세요: "))
+
+# # # 각 줄을 반복
+# for i in range(height):
+# #     # 앞부분의 공백과 별 개수 계산
+#     spaces = height - i - 1
+#     stars = 2 * i + 1
+    
+# #     # 포매팅하여 출력
+#     line = ' ' * spaces + '*' * stars
+#     print(line)
