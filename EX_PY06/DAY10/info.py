@@ -1,1 +1,0 @@
-pokemon_list=[{'num':1, 'name':'이상해씨'}, {'num':2, 'name':'이상해꽃'}]

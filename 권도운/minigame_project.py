@@ -83,8 +83,8 @@ def num_game():
             print('정답입니다!')
             break
     
-        if attempt == 0:
-            print(f'Game Over. 정답은 {number}입니다.')
+    if attempt == 0:
+        print(f'Game Over. 정답은 {number}입니다.')
     
     play_again = ask_play_again()
     if play_again == '예':
