@@ -14,6 +14,7 @@ class Burger:
     kind='맥도날드'
     # 힙 영역에 객체 생성 시 속성값 저장
     def __init__(self, bread, patty, veg):
+
         self.bread=bread
         self.patty=patty
         self.veg=veg
@@ -26,6 +27,11 @@ class Burger:
         print(f'패  티 : {self.patty}')
         print(f'야  채 : {self.veg}')
         
+# 속성을 변경하거나 읽어오는 메서드 ==> getter/setter 메서드
+    def get_bread(self): 
+        return self.bread
+    def set_bread(self, bread): 
+        self.bread=bread
 
 ## 객체 생성------------------------------------------------------------------
 # 불고기 버거 객체생성
@@ -38,3 +44,9 @@ Burger2=Burger('참깨빵','쇠고기','치즈 양파')
 Burger1.printInfo()
 Burger2.printInfo()
 
+# 속성 읽는 방법 : (1) 직접 접근 읽기  (2) 간접 접근 읽기 - getter 메서드 사용
+print(Burger1.bread, Burger1.get_bread)
+
+# 속성 변경 방법 : (1) 직접 접근 읽기  (2) 간접 접근 읽기 - setter 메서드 사용
+Burger1.bread='들깨빵'
+Burger1.set_bread('올리브빵')
