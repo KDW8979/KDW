@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대화 주제 예측 앱</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <header>
+        <h1>대화 주제 예측</h1>
+        <style>
+            /* textarea 스타일 지정 */
+            textarea {
+                width: 40%;   /* 넓이 40% */
+                height: 200px; /* 높이 200px */
+            }
+        </style>
+    </header>
+    <section>
+        <form action="/" method="post">
+            <label for="conversation">대화 입력:</label><br><br><br><br>
+            <textarea id="conversation" name="conversation" rows="6" cols="50" placeholder="대화를 입력하세요..."></textarea><br><br>
+            <input type="submit" value="예측하기">
+        </form>
+    </section>
+</body>
+</html>
