@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS & SELECTOR</title>
+    <!-- 선택자 {속성 : 값; 속성:값;}-->
+    <style>
+        p { /*특정 속성 스타일 지정해 스타일 설정*/
+            background-color: rgba(0, 204, 255, 0.525);}
+        #secondP { /*특정 id의 스타일 지정   #로 태그해 설정한다*/
+            background-color: rgba(85,255, 0, 0.525);   /*rgb의 각 속성 0~255 정도 + alpha 투명도? 인듯*/
+            color: blue;
+            font-weight: bold;
+        }
+        body {
+            align-content: center;  /*중앙 정렬*/
+            background-image: url('../images/retrie.png'); /*웹 화면 설정 바디 부분 전체가 이미지로 도배*/
+        }
+
+        .mon {background-color: pink;}  /*특정 클래스 class의 것들의 스타일 지정   .로 태그 하여 설정한다*/
+
+        h1,h2,h3 {font-family: sans-serif;} /*,로 묶어서 여러개 지정도 가능!*/
+    </style>
+</head>
+<body>
+    <h3>CSS 스타일 적용</h3>
+    <!--HTML 태그를 예쁘게 스타일리해주는 역할 CSS-->
+    <p>
+        오늘은 화요일입니다. <br>
+        비오는 화요일입니다. <br>
+        비오는 가을입니다. <br>
+    </p>
+    <p id="secondP">
+        내일은 수요일입니다.
+    </p>
+    <p class="mon">
+        어제는 월요일이었습니다
+    </p>
+    <p class="mon">
+        어제는 월요일이었습니다
+    </p>
+    <p class="mon">
+        어제는 월요일이었습니다
+    </p>
+    <p class="mon">
+        어제는 월요일이었습니다
+    </p>
+</body>
+</html>

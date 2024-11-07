@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS & SELECTOR</title>
+    <!-- 외부 CSS 설정 -->
+    <link type="text/css" rel="stylesheet" href="../css/mystyle.css">   <!--css라는 파일을 따로 만들어서 클래스py 파일 만든것처럼
+    따로 빼두었음. 그걸 import 하는 개념-->
+
+    <!-- 내부 CSS 설정 -->
+    <style>
+        #secondP {color: red; font-weight: bold;}
+    </style>
+</head>
+<body>
+    <h3>CSS 스타일 적용</h3>
+    <!--HTML 태그를 예쁘게 스타일리해주는 역할 CSS-->
+    <p>
+        오늘은 화요일입니다. <br>
+        비오는 화요일입니다. <br>
+        비오는 가을입니다. <br>
+    </p>
+    <!-- !!!!!!!! CSS가 여러개면 나랑 젱리 가까운게 적용 !!!!!!-->
+    <p id="secondP" style="color: aliceblue;">
+        내일은 수요일입니다.
+    </p>
+    <p class="mon">
+        어제는 월요일이었습니다
+    </p>
+    <p class="mon">
+        어제는 월요일이었습니다
+    </p>
+    <p class="mon">
+        어제는 월요일이었습니다
+    </p>
+    <p class="mon">
+        어제는 월요일이었습니다
+    </p>
+</body>
+</html>

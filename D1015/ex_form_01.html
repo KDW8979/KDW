@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form 태그와 다양한 입력 Input 태그</h1>
+    <form>
+        <label>성별:</label>
+        <label>
+            <input type="radio" name="gender" value="m"> 남자
+        </label>
+        
+        <input id="f" type="radio" name="gender" value="f"> <label for ="f"> 여자 </label>
+
+        <!-- 서버 전송 기능 submit 태그 -->
+        <input type='submit' value="전송">
+    </form>
+    <!-- form / label 내에 어떻게 존재하느냐에 따라 형식이 바뀐다고 이래저래 많이 바뀌었던 부분. 위 아래 비교해서 차이점 볼것? -->
+    <h3>filedset & legend 태그로 그룹화</h3>
+    <form>
+        <fieldset>
+            <legend>성별</legend>
+            <label>
+                <input type="radio" name="gender" value="m"> 남자
+            </label>
+            <label>
+                <input type="radio" name="gender" value="f"> 여자
+            </label>
+
+            
+        </fieldset>
+        <input type='submit' value="전송">
+    </form>
+    
+</body>
+</html>

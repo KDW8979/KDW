@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태그</title>
+</head>
+<body>
+    <h3>Table 태그</h3>
+    <!--상품목록-->
+    <table border="1">  <!--border 없으면 그냥 허공에 글 나열. html에서는 오류가 안뜨기 때문에 처음에는 border주고나서
+        아래 열행 값들 제대로 설정되는거 보고 빼는게 나을듯.-->
+        <tr>
+            <th>번호</th>
+            <th>제품명</th>
+            <th>수량</th>
+            <th>가격</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>사과</td>
+            <td rowspan="2">10</td>
+            <td rowspan="2">10000</td>  <!--행 길이가 2, 그럼 아래의 행을 없애야 이쁘게 모양이 나온다. 
+            그냥 rowspan 2 주고 아래도 그대로 1행을 줘버리면 밀려버림. 직접 모양보는게 이해가 빠르다.-->
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>홈스윗홈</td>
+            <!-- <td>1</td> -->
+            <!-- <td>10,000,000,000</td> -->
+        </tr>
+        <tr>
+            <td>총합</td>
+            <td>?????</td>
+        </tr>
+    </table>
+</body>
+</html>
