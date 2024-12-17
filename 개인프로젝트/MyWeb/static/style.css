@@ -1,0 +1,79 @@
+/* Google Fonts에서 Cinzel 폰트를 사용 */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+/* 전체 배경 설정 */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('/static/image/Gilbert_WShakespeares_Plays.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* 헤더 스타일 */
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.3); /* 투명도 */
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'Cinzel', serif; /* 고풍스러운 폰트 */
+}
+
+/* 제목 스타일 */
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* 폼 컨테이너 위치 조정 */
+.form-container {
+    width: 60%; /* 크기 조정 */
+    margin: 100px auto; /* 더 아래로 위치 조정 */
+    background-color: rgba(255, 255, 255, 0.85); /* 반투명 흰색 */
+    padding: 40px; /* 패딩 증가 */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #660033; /* 와인색 텍스트 */
+    text-align: center;
+}
+
+/* 입력 필드 스타일 */
+.form-container label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* 버튼 스타일 */
+.submit-button {
+    display: inline-block;
+    width: 100px; /* 크기 축소 */
+    padding: 10px;
+    background-color: #660033; /* 와인색 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px; /* 글자 크기 축소 */
+    cursor: pointer;
+    text-align: center;
+}
+
+.submit-button:hover {
+    background-color: #520026; /* 어두운 와인색 */
+}

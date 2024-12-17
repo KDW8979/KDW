@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakespeare Works Classification</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Shakespeare Works Classification</h1>
+    </header>
+    <main>
+        <div class="form-container">
+            <form method="post" action="/result" enctype="multipart/form-data">
+                <label for="file">작품을 업로드하면 해당 작품이 희극/비극인지를 분류합니다.</label>
+                <input 
+                    type="file" 
+                    id="file" 
+                    name="file" 
+                    accept=".txt"
+                />
+
+                <button type="submit" class="submit-button">확인</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
